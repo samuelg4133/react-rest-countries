@@ -1,12 +1,17 @@
-import React from 'react';
+import React from "react";
+import Header from "./components/Header";
+import Main from "./pages/Main";
 
-// import { Container } from './styles';
+import GlobalStyles from './styles/global';
 
 const App: React.FC = () => {
   return (<>
-  Hello World!
+    <Header title='Rest Countries'/>
+    <Main/>
+    <GlobalStyles/>
   </>
-  );
-}
+  )
+  ;
+};
 
 export default App;
